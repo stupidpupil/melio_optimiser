@@ -43,11 +43,7 @@ jobs:
     - name: Update output
       run: |
         devtools::load_all()
-
-        denylist <- c(
-          "ige-immunoglobulin-e-blood-test"
-        )
-
+        
         products <- get_melio_products() |> 
           products_to_products_info_tibble()
 
