@@ -43,11 +43,15 @@ jobs:
     - name: Update output
       run: |
         devtools::load_all()
-        
-        products <- get_melio_products() |> 
-          products_to_products_info_tibble()
+
+        products <- get_melio_products()
 
         products |>
+          products_to_exchange_format() |>
+          jsonlite::write_json("output/products.json")  
+
+        products |>
+          products_to_products_info_tibble() |>
           readr::write_csv("output/products.csv")
 
       shell: Rscript {0}
