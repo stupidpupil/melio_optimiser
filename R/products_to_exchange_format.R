@@ -15,6 +15,8 @@ products_to_exchange_format <- function(products){
       prod$price_pence = jsonlite::unbox(prod$price_pence)
       prod$turnaround_days = jsonlite::unbox(prod$turnaround_days)
 
+      prod$sampling_procedure = jsonlite::unbox("venous")
+
       prod$biomarkers <- tibble::tibble(biomarker_handle = prod$biomarkers) |>
         dplyr::left_join(biomarkers_map,  by="biomarker_handle") |>
         dplyr::pull("sctid") |>
