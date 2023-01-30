@@ -4,7 +4,8 @@ fit-to-fly-certificate,
 cholesterol-and-triglycerides,1022191000000100
 cholesterol-and-triglycerides,994351000000103
 cholesterol-and-triglycerides,1006191000000106
-c-reactive-protein-crp,
+cholesterol-and-triglycerides,1005691000000109
+c-reactive-protein-crp,1001371000000100
 hba1c,1003671000000109
 glucose,1010611000000107
 creatinine,1000731000000107
@@ -19,13 +20,13 @@ bilirubin,999691000000104
 gamma-glutamyl-transferase-ggt,1000861000000106
 calcium,
 iron-profile,
-ferritin,
+ferritin,993381000000106
 folate,993411000000108
 magnesium,
 vitamin-d,1031181000000107
 vitamin-b12,993391000000108
 psa,1000381000000105
-uric-acid,
+uric-acid,1009061000000108
 number-of-basophils,
 eosinophil-count,
 haemoglobin-hb,
@@ -47,7 +48,7 @@ free-triiodothyronine-ft3,1016961000000104
 thyroid-stimulating-hormone-tsh,1022791000000101
 anti-thyroid-peroxidase-tpo,
 hcg,
-progesterone,
+progesterone,997151000000105
 hepatitis-b-surface-antibody-anti-hbs,
 anti-mullerian-hormone-amh,
 oestradiol-e2,1010521000000102
