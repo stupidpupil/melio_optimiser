@@ -3,6 +3,11 @@ products_to_exchange_format <- function(products){
   biomarkers_map <- readr::read_csv("data-raw/biomarker_snomed_map.csv", col_types="cc")
 
   products <- products |>
+    purrr::keep(function(prod){
+      !is.na(prod$title) &
+      !is.na(prod$handle) &
+      !is.na(prod$price_pence)
+    }) |>
     purrr::map(function(prod){
       prod$id = NULL
 
