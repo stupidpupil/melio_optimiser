@@ -62,6 +62,10 @@ products_to_exchange_format <- function(products){
     purrr::every(function(prod){"1010521000000102" %in% prod$biomarkers}))
 
   stopifnot(products |> 
+    purrr::keep(function(prod){prod$name |> stringr::str_detect("menopaus")}) |> 
+    purrr::every(function(prod){"1010521000000102" %in% prod$biomarkers}))
+
+  stopifnot(products |> 
     purrr::keep(function(prod){prod$name |> stringr::str_detect("\\b[Ll]iver\\b")}) |> 
     purrr::every(function(prod){"1000861000000106" %in% prod$biomarkers}))
 
